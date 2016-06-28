@@ -1,0 +1,40 @@
+{
+  "name": "ui-text-input",
+  "version": "0.0.1",
+  "description": "ui text input components for react",
+  "keywords": [
+    "react-component",
+    "react"
+  ],
+  "main": "alerts.js",
+  "author": "Courtney Eimerman-Wallace <crwallace39@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel alerts.jsx > alerts.js",
+    "test": "jshint . --exclude node_modules",
+    "prepublish": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crwallace/ui-lib/"
+  },
+  "bugs": {
+    "url": "https://github.com/crwallace/ui-lib/issues"
+  },
+  "browserify": {
+    "transform": [
+      "node-lessify"
+    ]
+  },
+  "dependencies": {
+    "node-lessify": "0.0.10"
+  },
+  "peerDependencies": {
+    "react": ">=0.14",
+    "react-addons-css-transition-group": ">=0.14"
+  },
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "jshint": "^2.7.0"
+  }
+

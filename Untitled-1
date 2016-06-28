@@ -1,0 +1,25 @@
+import React from 'react';
+
+export default class TextInput extends React.Component {
+  render() {
+    return (
+      <div>
+        <label>
+              {this.props.label}
+        </label>
+        {errorSpan}
+        <input
+            placeholder={this.props.placeholder}
+            type="text"
+            value={this.props.value}/>
+        <p>{this.props.value}</p>
+      </div>
+    );
+  }
+}
+
+TextInput.propTypes = {
+  label: React.PropTypes.string.isRequired,
+  placeholder: React.PropTypes.string,
+  value: React.PropTypes.string,
+};
